@@ -1,0 +1,9 @@
+for i in range(int(input())):
+    s=input()
+    l1=s.split()
+    l=list(map(lambda x:int(x),l1))
+    x,y=l[0],l[1]
+    move=x//y
+    if x%y!=0:
+        move=move+(x%y)
+    print(move)
